@@ -1,1 +1,1 @@
-# user-service
+# thrive-ecommerce
