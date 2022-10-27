@@ -1,0 +1,38 @@
+name: Production workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 18.x
+      - run: npm install
+      - name: Deploy to Heroku
+        uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+          heroku_app_name: "github-actions-heroku-prod"
+          heroku_email: "zafarsaleem3@gmail.com"
+        env:
+          NODE_ENV: production
+          PORT: 3000
+          JWT_SECRET: ${{ secrets.JWT_SECRET }}
+          SECRET_CRYPT_KEY: ${{ secrets.SECRET_CRYPT_KEY }}
+          MAILJET_API_KEY: ${{ secrets.MAILJET_API_KEY }}
+          MAILJET_API_SECRET_KEY: ${{ secrets.MAILJET_API_SECRET_KEY }}
+          DB_PROD_HOST: ${{ secrets.DB_PROD_HOST }}
+          DB_PROD_DATABASE: ${{ secrets.DB_PROD_DATABASE }}
+          DB_PROD_USERNAME: ${{ secrets.DB_PROD_USERNAME }}
+          DB_PROD_PASSWORD: ${{ secrets.DB_PROD_PASSWORD }}
