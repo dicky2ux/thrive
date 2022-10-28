@@ -1,5 +1,10 @@
 [
   {
+    "name": "any",
+    "email": "any",
+    "password": "any"
+  },
+  {
     "name": "Dicky Adhi Satria",
     "email": "dicky@test.com",
     "password": "12345"

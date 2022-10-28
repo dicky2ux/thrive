@@ -1,4 +1,5 @@
 const swaggerAutogen = require("swagger-autogen")();
+const port = require("./bin/www").port;
 
 const doc = {
   info: {
@@ -6,11 +7,12 @@ const doc = {
     title: "API Documentation",
     description: "API Documentation for E-Commerce App",
   },
-  host: "staging-thrive.herokuapp.com" && "thrive-project.herokuapp.com",
+  host: `localhost:${port}`,
   basePath: "/",
   schemes: ["http", "https"],
   consumes: ["application/json"],
   produces: ["application/json"],
+
   tags: [
     {
       name: "User",
