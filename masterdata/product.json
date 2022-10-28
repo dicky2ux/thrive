@@ -1,0 +1,38 @@
+[
+  {
+    "user_id": 1,
+    "name": "Laptop Asus ROG Strix G531GT-BQ024T",
+    "price": 10000000,
+    "stock": 2
+  },
+  {
+    "user_id": 2,
+    "name": "Laptop Acer Nitro 5 AN515-54-51M2",
+    "price": 9000000,
+    "stock": 2
+  },
+  {
+    "user_id": 3,
+    "name": "Laptop Acer Aspire 3 A315-56-59ZT",
+    "price": 6000000,
+    "stock": 1
+  },
+  {
+    "user_id": 1,
+    "name": "Keyboard Logitech G213 Prodigy",
+    "price": 100000,
+    "stock": 1
+  },
+  {
+    "user_id": 2,
+    "name": "Monitor LG 24MK400H-B",
+    "price": 3500000,
+    "stock": 1
+  },
+  {
+    "user_id": 3,
+    "name": "Mouse Logitech G102 Prodigy",
+    "price": 100000,
+    "stock": 1
+  }
+]

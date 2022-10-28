@@ -1,0 +1,46 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "dicky2uxgg",
+    "database": "thrive_development",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "timezone": "Asia/Jakarta"
+  },
+  "staging": {
+    "username": "townwqtxxzvvhv",
+    "password": "19fdb7d0d4db2bc89bcf324df75fadc43515014ec1ac203a5405bf672f989541",
+    "database": "d6cfq3ud8avl7s",
+    "host": "ec2-52-23-131-232.compute-1.amazonaws.com",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    },
+    "timezone": "Asia/Jakarta"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "dicky2uxgg",
+    "database": "thrive_test",
+    "host": "localhost",
+    "dialect": "postgres",
+    "timezone": "Asia/Jakarta"
+  },
+  "production": {
+    "username": "axyzmedbcjgdzn",
+    "password": "46b681b96e7399e5a4306d085f42a0c1f59b4ec44d80d3f0a540f0021e8dec55",
+    "database": "d29e9m9qeadl9j",
+    "host": "ec2-44-199-9-102.compute-1.amazonaws.com",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    },
+    "timezone": "Asia/Jakarta"
+  }
+}

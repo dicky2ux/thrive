@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Dicky Adhi Satria",
+    "email": "dicky@test.com",
+    "password": "12345"
+  },
+  {
+    "name": "Adib Wicaksono",
+    "email": "adib@test.com",
+    "password": "12345"
+  },
+  {
+    "name": "Anggit",
+    "email": "anggit@test.com",
+    "password": "12345"
+  },
+  {
+    "name": "David Sihombing",
+    "email": "david@test.com",
+    "password": "12345"
+  }
+]

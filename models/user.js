@@ -1,6 +1,7 @@
 "use strict";
 const { Model } = require("sequelize");
 const bcrypt = require("bcrypt");
+
 module.exports = (sequelize, DataTypes) => {
   class User extends Model {
     /**
@@ -10,44 +11,30 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      User.hasMany(models.Product, {
+        foreignKey: "user_id",
+      });
+      User.hasMany(models.Order, {
+        foreignKey: "user_id",
+      });
     }
   }
   User.init(
     {
-      email: {
-        type: DataTypes.STRING,
-        validate: {
-          notEmpty: {
-            args: true,
-            msg: "Email cannot be empty",
-          },
-          isEmail: {
-            args: true,
-            msg: "Email format is invalid",
-          },
-        },
-      },
-      password: {
-        type: DataTypes.STRING,
-        validate: {
-          notEmpty: {
-            args: true,
-            msg: "Password cannot be empty",
-          },
-          len: {
-            args: [6, 12],
-            msg: "Password length must be between 6 and 12 characters",
-          },
-        },
-      },
+      name: DataTypes.STRING,
+      email: DataTypes.STRING,
+      password: DataTypes.STRING,
     },
     {
       sequelize,
       modelName: "User",
       hooks: {
-        beforeCreate: async (user) => {
-          const salt = await bcrypt.genSalt(10);
-          user.password = await bcrypt.hash(user.password, salt);
+        beforeCreate: async (user, options) => {
+          user.password = bcrypt.hashSync(
+            user.password,
+            +process.env.SALT_ROUNDS
+          );
+          return user;
         },
       },
     }
