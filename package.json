@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "sequelize db:migrate:undo:all && npm run migrate",
+    "post-build": "sequelize db:migrate:undo:all && npm run migrate",
     "migrate": "sequelize db:migrate && npm run seed",
     "seed": "sequelize db:seed:all && npm start",
     "start": "node ./bin/www",
