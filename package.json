@@ -6,7 +6,7 @@
   "scripts": {
     "reset": "sequelize db:migrate:undo:all && npm run migrate",
     "migrate": "sequelize db:migrate && npm run seed",
-    "seed": "sequelize db:seed:all && npm start",
+    "seed": "sequelize db:seed:all",
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1",
