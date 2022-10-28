@@ -55,5 +55,5 @@ const endpointsFiles = [
 ];
 
 swaggerAutogen(outputFile, endpointsFiles, doc).then(() => {
-  require("./bin/www");
+  require("./app");
 });
