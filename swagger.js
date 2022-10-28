@@ -6,7 +6,7 @@ const doc = {
     title: "API Documentation",
     description: "API Documentation for E-Commerce App",
   },
-  host: "staging-thrive.herokuapp.com/" && "thrive-project.herokuapp.com/",
+  host: "staging-thrive.herokuapp.com" && "thrive-project.herokuapp.com",
   basePath: "/",
   schemes: ["http", "https"],
   consumes: ["application/json"],

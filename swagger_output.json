@@ -5,7 +5,7 @@
     "title": "API Documentation",
     "description": "API Documentation for E-Commerce App"
   },
-  "host": "thrive-project.herokuapp.com/",
+  "host": "thrive-project.herokuapp.com",
   "basePath": "/",
   "tags": [
     {
