@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm run undo migrate && npm run migrate",
-    "undo migrate": "sequelize db:migrate:undo:all",
-    "migrate": "sequelize db:migrate && npm run undo seed",
-    "undo seed": "sequelize db:seed:undo:all && npm run seed",
+    "build": "sequelize db:migrate:undo:all && npm run migrate",
+    "migrate": "sequelize db:migrate && npm run unseed",
+    "unseed": "sequelize db:seed:undo:all && npm run seed",
     "seed": "sequelize db:seed:all && npm start",
     "start": "node ./swagger.js"
   },
