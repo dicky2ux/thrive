@@ -5,7 +5,7 @@
     "title": "API Documentation",
     "description": "API Documentation for E-Commerce App"
   },
-  "host": "https://thrive-project.herokuapp.com/",
+  "host": "thrive-project.herokuapp.com/",
   "basePath": "/",
   "tags": [
     {
@@ -24,7 +24,10 @@
       "path": "/order"
     }
   ],
-  "schemes": ["http", "https"],
+  "schemes": [
+    "http",
+    "https"
+  ],
   "securityDefinitions": {
     "Bearer": {
       "type": "apiKey",
@@ -32,12 +35,18 @@
       "in": "header"
     }
   },
-  "consumes": ["application/json"],
-  "produces": ["application/json"],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
   "paths": {
     "/user/register": {
       "post": {
-        "tags": ["User"],
+        "tags": [
+          "User"
+        ],
         "description": "",
         "parameters": [
           {
@@ -64,7 +73,9 @@
     },
     "/user/login": {
       "post": {
-        "tags": ["User"],
+        "tags": [
+          "User"
+        ],
         "description": "",
         "parameters": [
           {
@@ -88,7 +99,9 @@
     },
     "/product/": {
       "get": {
-        "tags": ["Product"],
+        "tags": [
+          "Product"
+        ],
         "description": "",
         "parameters": [
           {
@@ -119,7 +132,9 @@
         ]
       },
       "post": {
-        "tags": ["Product"],
+        "tags": [
+          "Product"
+        ],
         "description": "",
         "parameters": [
           {
@@ -160,7 +175,9 @@
     },
     "/product/my": {
       "get": {
-        "tags": ["Product"],
+        "tags": [
+          "Product"
+        ],
         "description": "",
         "parameters": [
           {
@@ -183,7 +200,9 @@
     },
     "/product/{id}": {
       "get": {
-        "tags": ["Product"],
+        "tags": [
+          "Product"
+        ],
         "description": "",
         "parameters": [
           {
@@ -212,7 +231,9 @@
     },
     "/order/": {
       "post": {
-        "tags": ["Orders"],
+        "tags": [
+          "Orders"
+        ],
         "description": "",
         "parameters": [
           {
@@ -250,7 +271,9 @@
     },
     "/order/my": {
       "get": {
-        "tags": ["Orders"],
+        "tags": [
+          "Orders"
+        ],
         "description": "",
         "parameters": [
           {
