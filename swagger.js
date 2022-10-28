@@ -1,5 +1,4 @@
 const swaggerAutogen = require("swagger-autogen")();
-const port = require("./bin/www").port;
 
 const doc = {
   info: {
@@ -7,7 +6,7 @@ const doc = {
     title: "API Documentation",
     description: "API Documentation for E-Commerce App",
   },
-  host: `localhost:${port}`,
+  host: `localhost:3000`,
   basePath: "/",
   schemes: ["http", "https"],
   consumes: ["application/json"],

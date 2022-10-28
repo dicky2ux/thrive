@@ -5,7 +5,7 @@
     "title": "API Documentation",
     "description": "API Documentation for E-Commerce App"
   },
-  "host": "localhost:undefined",
+  "host": "localhost:3000",
   "basePath": "/",
   "tags": [
     {
