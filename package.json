@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npm ci && sequelize db:migrate:undo:all && npm run migrate",
-    "migrate": "sequelize db:migrate && npm run unseed",
-    "unseed": "sequelize db:seed:undo:all && npm run seed",
+    "migrate": "sequelize db:migrate && npm run seed",
     "seed": "sequelize db:seed:all && npm start",
     "start": "node ./swagger.js"
   },
