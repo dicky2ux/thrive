@@ -27,7 +27,7 @@ jobs:
           heroku_app_name: "staging-thrive"
           heroku_email: "dickyadhisatria@upi.edu"
         env:
-          NODE_ENV: test
+          NODE_ENV: staging
           PORT: 3000
           JWT_SECRET: ${{ secrets.JWT_SECRET }}
           SECRET_CRYPT_KEY: ${{ secrets.SECRET_CRYPT_KEY }}
