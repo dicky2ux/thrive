@@ -30,10 +30,10 @@
     "timezone": "Asia/Jakarta"
   },
   "production": {
-    "username": "axyzmedbcjgdzn",
-    "password": "46b681b96e7399e5a4306d085f42a0c1f59b4ec44d80d3f0a540f0021e8dec55",
-    "database": "d29e9m9qeadl9j",
-    "host": "ec2-44-199-9-102.compute-1.amazonaws.com",
+    "username": "uqseqhtdolwtgr",
+    "password": "e7c870612a69d6762332eca2fa71dbb4ac76ec469b314a8b3561df80af65c5c6",
+    "database": "d6vkvi662vo8at",
+    "host": "ec2-3-220-207-90.compute-1.amazonaws.com",
     "dialect": "postgres",
     "dialectOptions": {
       "ssl": {
