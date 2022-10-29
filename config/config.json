@@ -8,10 +8,10 @@
     "timezone": "Asia/Jakarta"
   },
   "staging": {
-    "username": "twnxziyggmtwsc",
-    "password": "915f5164e7ae75ea03479744f214fb2c96e18460be7d2263ef909281e78b5478",
-    "database": "d2u0grg7gt2rkl",
-    "host": "ec2-3-213-66-35.compute-1.amazonaws.com",
+    "username": "etgaqumxzwnslo",
+    "password": "be619740699c1dd7a750af2f71881090fc7cb6736d7abeee6b35157c251925b8",
+    "database": "d5s3qpc8lr724p",
+    "host": "ec2-3-220-207-90.compute-1.amazonaws.com",
     "dialect": "postgres",
     "dialectOptions": {
       "ssl": {
