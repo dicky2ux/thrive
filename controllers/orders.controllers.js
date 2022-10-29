@@ -70,7 +70,8 @@ const orderController = {
       }
       const subject = `Thanks for buying in Thrive. Your order is on the way!`;
       const message = `Thanks for buying ${product.name} from ${productOwner.name} with total price Rp.${total_price} and quantity ${quantity}`;
-      const html = `<h1>More Closer with me in LinkedIn <a href="https://www.linkedin.com/in/dickyadhisatria/">Dicky Adhi Satria</a></h1>`;
+      const html = `<h1>Thanks for buying ${product.name} from ${productOwner.name} with total price Rp.${total_price} and quantity ${quantity}</h1><br><p>Thanks for buying in Thrive. Your order is on the way!</p><br><p>
+      <h1>More Closer with me in LinkedIn <a href="https://www.linkedin.com/in/dickyadhisatria/">Dicky Adhi Satria</a></h1></p><p>Regards,</p><p>Thrive Team</p>`;
       await sendMail(user.email, user.name, subject, message, html);
       return resSuccessHandler(res, order, "Order Success", 201);
     } catch (error) {
