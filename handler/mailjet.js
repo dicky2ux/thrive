@@ -3,7 +3,7 @@ const mailjet = require("node-mailjet").apiConnect(
   "53821fbb04f9bf35080f998cb5af4e10"
 );
 
-const sendMail = (email, name, subject, message) => {
+const sendMail = (email, name, subject, message, html) => {
   const request = mailjet.post("send", { version: "v3.1" }).request({
     Messages: [
       {
@@ -19,6 +19,7 @@ const sendMail = (email, name, subject, message) => {
         ],
         Subject: subject,
         TextPart: message,
+        HTMLPart: html,
       },
     ],
   });

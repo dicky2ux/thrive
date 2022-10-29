@@ -68,9 +68,10 @@ const orderController = {
       if (!productOwner) {
         throw new NotFoundError("Product Owner not found", 404);
       }
-      const text = `Thanks for buying ${product.name} from ${productOwner.name}`;
-      const html = `<h1>Thanks for buying ${product.name} from ${productOwner.name}</h1>`;
-      await sendMail(user.email, user.name, text, html);
+      const subject = `Thanks for buying in Thrive. Your order is on the way!`;
+      const message = `Thanks for buying ${product.name} from ${productOwner.name} with total price Rp.${total_price} and quantity ${quantity}`;
+      const html = `<h1>More Closer with me in LinkedIn <a href="https://www.linkedin.com/in/dickyadhisatria/">Dicky Adhi Satria</a></h1>`;
+      await sendMail(user.email, user.name, subject, message, html);
       return resSuccessHandler(res, order, "Order Success", 201);
     } catch (error) {
       resErrorHandler(res, error);
